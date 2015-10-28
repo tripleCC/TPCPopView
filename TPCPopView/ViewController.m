@@ -58,7 +58,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [TPCPopView showMessages:self.messages withContainerSize:CGSizeMake(110, 140) fromView:self.view1 fadeDirection:TPCPopViewFadeDirectionCenter dataSource:self delegate:self];
+    [TPCPopView showWithContainerSize:CGSizeMake(110, 140) fromView:self.view1 fadeDirection:TPCPopViewFadeDirectionCenter dataSource:self delegate:self];
     [TPCPopView showMessages:self.messages withContainerSize:CGSizeMake(110, 140) fromView:self.view2 fadeDirection:TPCPopViewFadeDirectionRightTop clickActionBlock:^(NSInteger row) {
         NSLog(@"%ld", row);
     }];

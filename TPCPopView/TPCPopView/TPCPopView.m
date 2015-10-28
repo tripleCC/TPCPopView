@@ -262,13 +262,12 @@ static NSString *reuseIdentifier = @"popViewCellIdentifier";
     [self showMessages:messages withContainerSize:containerSize fromView:fromView fadeDirection:fadeDirection clickActionBlock:clickActionBlock dataSource:nil delegate:nil];
 }
 
-+ (void)showMessages:(NSArray *)messages
-   withContainerSize:(CGSize)containerSize
++ (void)showWithContainerSize:(CGSize)containerSize
             fromView:(UIView *)fromView
        fadeDirection:(TPCPopViewFadeDirection)fadeDirection
           dataSource:(id<TPCPopViewDataSource>)dataSource
             delegate:(id<TPCPopViewDelegate>)delegate {
-    [self showMessages:messages withContainerSize:containerSize fromView:fromView fadeDirection:fadeDirection clickActionBlock:nil dataSource:dataSource delegate:delegate];
+    [self showMessages:nil withContainerSize:containerSize fromView:fromView fadeDirection:fadeDirection clickActionBlock:nil dataSource:dataSource delegate:delegate];
 }
 @end
 

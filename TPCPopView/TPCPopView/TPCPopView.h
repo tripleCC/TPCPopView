@@ -40,8 +40,7 @@ typedef NS_ENUM(NSInteger, TPCPopViewFadeDirection) {
             fromView:(UIView *)fromView
        fadeDirection:(TPCPopViewFadeDirection)fadeDirection
     clickActionBlock:(void (^)(NSInteger))clickActionBlock;
-+ (void)showMessages:(NSArray *)messages
-   withContainerSize:(CGSize)containerSize
++ (void)showWithContainerSize:(CGSize)containerSize
             fromView:(UIView *)fromView
        fadeDirection:(TPCPopViewFadeDirection)fadeDirection
           dataSource:(id<TPCPopViewDataSource>)dataSource
